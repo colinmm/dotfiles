@@ -1,3 +1,3 @@
-vim
+dotfiles
 ===
-A repo for my vim configurations--specifically my vimrc.
+A repo for my configurations
