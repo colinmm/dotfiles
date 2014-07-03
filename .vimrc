@@ -1,18 +1,24 @@
-" Settings
-
-set autoindent " Copy indent from last line when starting new line
+" vim settings
+set autoindent
+set background=dark
+set expandtab 
 set encoding=utf-8
-set expandtab " Expand tabs to spaces
-set hlsearch " Highlight searches
-set incsearch " Highlight dynamically as pattern is typed
-set nowrap " Don't wrap lines
-set number " Enable line numbers
-set ruler " Show cursor position
-set shiftwidth=4 " # of spaces for indenting
-set showmode " Show the current mode
-set tabstop=4 " Set tab columns
-set visualbell " Use visual bell instead of audible bell
+set hlsearch
+set incsearch
+set nowrap
+set number
+set ruler
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set shiftwidth=4
+set showmode
+set tabstop=4
+set visualbell
 
+execute pathogen#infect()
+
+filetype on
 filetype plugin indent on
 syntax on
-filetype on
+colo seoul256
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
