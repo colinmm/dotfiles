@@ -3,3 +3,4 @@
 
 OPTIONS=color,!autopickup,lit_corridor,time
 OPTIONS=catname:Chumsie, dogname:Arrow,horsename:Trooper,showrace
+OPTIONS=number_pad:1
