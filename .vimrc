@@ -21,4 +21,5 @@ filetype plugin indent on
 syntax on
 colo seoul256
 autocmd vimenter * NERDTree
+let NERDTreeShowHidden=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
